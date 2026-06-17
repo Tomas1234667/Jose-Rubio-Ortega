@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { v4 as uuid } from "uuid";
 
-// ── helpers ──────────────────────────────────────────────────────────────────
+
 const load = (key, fallback) => {
     try {
         const raw = localStorage.getItem(key);
@@ -12,7 +12,7 @@ const load = (key, fallback) => {
 };
 const save = (key, val) => localStorage.setItem(key, JSON.stringify(val));
 
-// ── seed data ─────────────────────────────────────────────────────────────────
+
 const SEED_ALUMNOS = [
     { id: "a1", nombre: "Sofía Ramírez Torres", fechaNac: "2018-03-12", curp: "RATS180312MDFMRS01", grupo: "1A", tutor: "Laura Torres", tel: "5512345678", email: "ltorres@mail.com", sangre: "O+", alergias: "Ninguna", activo: true },
     { id: "a2", nombre: "Diego Hernández López", fechaNac: "2017-07-20", curp: "HELD170720HDFRNL02", grupo: "2B", tutor: "Carlos Hernández", tel: "5523456789", email: "chernandez@mail.com", sangre: "A+", alergias: "Penicilina", activo: true },

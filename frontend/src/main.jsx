@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
-=======
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -27,4 +27,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
   </BrowserRouter>
 )
->>>>>>> ad6f0b5055634c92c96965f4874369017b4c5cb8
